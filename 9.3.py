@@ -1,10 +1,11 @@
 class User:
-    def __init__(self,name,age):
+    def __init__(self,name):
         self.name = name
-        self.age = age
+
     def describe_restaurant(self):
-        long_name = f'{self.name} {self.age}'
+        long_name = f'{self.name}'
         return long_name.title()
+
     def open_restaurant(self):
         print(f"{self.describe_restaurant()}")
 
